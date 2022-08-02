@@ -1,2 +1,17 @@
 
 key: value 
+name: Shell Commands
+
+on: [push]
+
+jobs:
+    run-shell-commands:
+      runs-on: ubuntu-latest
+      steps:
+        - name : echo a string
+          run: echo "Hello World"
+        - name : multiline command
+          run: |
+            echo "Hello"
+            echo "World"
+
