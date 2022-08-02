@@ -1,5 +1,4 @@
 
-key: value 
 name: Shell Commands
 
 on: [push]
