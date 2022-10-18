@@ -12,5 +12,5 @@ jobs:
         with:
           who-to-greet: 'Richard Aguirre'
       - name: Response of Simple Js Action
-        run: echo ${{ steps.hello.outputs.time }}
+        run: echo "${{steps.hello.outputs.time}}"
 
