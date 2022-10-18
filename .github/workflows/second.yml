@@ -22,8 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Env Variables
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_CUSTOM_SECRET }}
         run: |
-          echo "Este es el secreto: ${{secrets.MY_CUSTOM_SECRET}}"
+          echo "Este es el secreto: ${{GITHUB_TOKEN}}"
 
 
 
