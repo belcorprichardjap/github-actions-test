@@ -6,13 +6,9 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Action CheckOut
-        uses: actions/checkout
-      - name: Simple Js Action
-        id: hello
-        uses: ./.github/actions/hello/@master
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/hello
         with:
-          who-to-greet: 'Richard Aguirre'
-      - name: Response of Simple Js Action
-        run: echo "${{steps.hello.outputs.time}}"
+          who-to-greet: 'Richard'
+
 
