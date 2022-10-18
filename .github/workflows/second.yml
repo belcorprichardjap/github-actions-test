@@ -9,11 +9,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Action Run
+        id: action-run
         uses: ./.github/actions/hello
         with:
           who-to-greet: 'Richard'
+        run: |
+            echo  "Hello ${{ steps.action-run.outputs.time }}"
  
-
+  second-job:
+    needs: first-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Env Variables
+        run: |
+          echo "Secreto ${{MY_CUSTOM_SECRET}}"
 
 
 
