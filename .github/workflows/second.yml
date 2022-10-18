@@ -11,4 +11,6 @@ jobs:
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: 'Richard Aguirre'
+      - name: Response of Simple Js Action
+        run: echo ${{ steps.hello.outputs.time }}
 
