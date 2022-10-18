@@ -9,4 +9,6 @@ jobs:
       - name: Simple Js Action
         id: hello
         uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: 'Richard Aguirre'
 
