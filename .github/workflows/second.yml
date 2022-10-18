@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Simple Js Action
         id: hello
-        uses: ./actions/hello
+        uses: ./.github/workflows/actions/hello
         with:
           who-to-greet: 'Richard Aguirre'
       - name: Response of Simple Js Action
