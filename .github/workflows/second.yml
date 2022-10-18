@@ -6,11 +6,11 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Simple Js Action
-        id: greed
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: 'Richard Aguirre'
-        run: echo "${{ steps.greed.outputs.greeting }}"
+     - name : echo a string
+       run: echo "Hello World"
+     - name : multiline command
+       run: |
+            echo "Hello"
+            echo "World"
 
         
