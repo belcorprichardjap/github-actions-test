@@ -13,6 +13,7 @@ jobs:
         uses: ./.github/actions/hello
         with:
           who-to-greet: 'Richard'
+      - name: Outputs
         run: |
             echo  "Hello ${{ steps.action-run.outputs.time }}"
  
