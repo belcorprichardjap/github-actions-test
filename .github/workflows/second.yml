@@ -6,15 +6,6 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: First Step
-        run: echo "Hello World"
-      - name: Multi Line Step
-          echo "Hello"
-          echo "World"
-      - name: Python Shell
-        run: |
-          python -c "print('Hello World')"
-        shell: python
       - name: Simple Js Action
         id: greed
         uses: actions/hello-world-javascript-action@v1
