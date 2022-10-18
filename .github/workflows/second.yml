@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Action CheckOut
-        uses: actions/checkout@latest
+        uses: actions/checkout@master
       - name: Simple Js Action
         id: hello
         uses: ./.github/actions/hello/@master
