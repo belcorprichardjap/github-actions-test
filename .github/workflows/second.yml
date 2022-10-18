@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Print Env Variables
         run: |
-          echo "Secreto ${{MY_CUSTOM_SECRET}}"
+          echo "Secreto ${MY_CUSTOM_SECRET}"
 
 
 
