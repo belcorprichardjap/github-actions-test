@@ -23,9 +23,9 @@ jobs:
     steps:
       - name: Print Env Variables
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_CUSTOM_SECRET }}
+          GITHUB_TOK: ${{ secrets.MY_CUSTOM_SECRET }}
         run: |
-          echo "Este es el secreto: ${GITHUB_TOKEN}"
+          echo "Este es el secreto: ${{ GITHUB_TOK }}"
 
 
 
