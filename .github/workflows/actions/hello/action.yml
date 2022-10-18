@@ -1,0 +1,14 @@
+name: Hello World
+author: Richard Aguirre
+description: 'This is a simple action that prints "Hello World" or "Hello" + the name of a person to greet.'
+inputs:
+  who-to-greet:
+    description: 'Who to greet.'
+    required: true
+    default: 'World'
+outputs:
+  time:
+    description: 'The time we greeted you.'
+runs:
+  using: 'node12'
+  main: './index.js'
