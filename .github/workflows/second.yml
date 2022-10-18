@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Simple Js Action
         id: hello
-        run: echo "Hola mundo"
+        uses: actions/hello-world-javascript-action@v1
 
