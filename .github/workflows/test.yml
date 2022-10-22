@@ -1,11 +1,12 @@
 name: Shell Commands
 
 on: [push]
+
 env:
-  BRANCH_NAME: ${{ github.ref_name }}
+  BRANCH_NAMEX: ${{ github.ref_name }}
 jobs:
     unete-shell-commands:
-      environment: ${{BRANCH_NAME}}
+      environment: ${{ env.BRANCH_NAMEX }}
       runs-on: ubuntu-latest
       steps:
         - name : echo a string
